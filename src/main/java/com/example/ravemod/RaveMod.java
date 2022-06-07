@@ -25,6 +25,7 @@ public class RaveMod
         eventBus.addListener(this::setup);
 
         ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
